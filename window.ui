@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>LibertyPain</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Downloads/128725.png</normaloff>../../Downloads/128725.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Инструменты</string>
+    </property>
+    <addaction name="action_eraser"/>
+    <addaction name="action_text"/>
+    <addaction name="action_brush"/>
+    <addaction name="action_line"/>
+    <addaction name="action_circle"/>
+    <addaction name="action_rect"/>
+    <addaction name="action_rectangle"/>
+    <addaction name="action_oval"/>
+    <addaction name="action_arc"/>
+    <addaction name="action_chord"/>
+    <addaction name="action_color_inside"/>
+    <addaction name="action__color_outside"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_text"/>
+   <addaction name="action_eraser"/>
+   <addaction name="action_brush"/>
+   <addaction name="action_line"/>
+   <addaction name="action_circle"/>
+   <addaction name="action_rect"/>
+   <addaction name="action_rectangle"/>
+   <addaction name="action_oval"/>
+   <addaction name="action_arc"/>
+   <addaction name="action_chord"/>
+   <addaction name="separator"/>
+   <addaction name="action_color_inside"/>
+   <addaction name="action__color_outside"/>
+   <addaction name="separator"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_music_on"/>
+   <addaction name="separator"/>
+   <addaction name="action_music_off"/>
+   <addaction name="separator"/>
+   <addaction name="action_clear"/>
+   <addaction name="action_dosya_kaydet"/>
+   <addaction name="action_dosya_farkli_kaydet"/>
+   <addaction name="action_dosya_ac"/>
+   <addaction name="action_geri_al"/>
+  </widget>
+  <action name="action_eraser">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/Без названия.png</normaloff>../../Downloads/Без названия.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ластик</string>
+   </property>
+   <property name="toolTip">
+    <string>Ластик</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
+   </property>
+  </action>
+  <action name="action_text">
+   <property name="text">
+    <string>Текст(русский)</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#ffffff;&quot;&gt;Текст(русский)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_brush">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../Downloads/w256h2561350817736brush.png</normaloff>../../Downloads/w256h2561350817736brush.png</iconset>
+   </property>
+   <property name="text">
+    <string>Кисточка</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="text">
+    <string>Линия</string>
+   </property>
+  </action>
+  <action name="action_circle">
+   <property name="text">
+    <string>Круг</string>
+   </property>
+  </action>
+  <action name="action_rect">
+   <property name="text">
+    <string>Прямоугольник</string>
+   </property>
+  </action>
+  <action name="action_red">
+   <property name="text">
+    <string>Красный</string>
+   </property>
+  </action>
+  <action name="action_green">
+   <property name="text">
+    <string>Зеленый</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Черный</string>
+   </property>
+  </action>
+  <action name="action_rectangle">
+   <property name="text">
+    <string>Округленный прямоуг.</string>
+   </property>
+  </action>
+  <action name="action_oval">
+   <property name="text">
+    <string>Овал</string>
+   </property>
+  </action>
+  <action name="action_arc">
+   <property name="text">
+    <string>Дуга</string>
+   </property>
+  </action>
+  <action name="action_chord">
+   <property name="text">
+    <string>Хорда</string>
+   </property>
+  </action>
+  <action name="action_color_inside">
+   <property name="text">
+    <string>Цвет заполнения</string>
+   </property>
+   <property name="toolTip">
+    <string>Цвет заполнения</string>
+   </property>
+  </action>
+  <action name="action__color_outside">
+   <property name="text">
+    <string>Цвет обводки</string>
+   </property>
+   <property name="toolTip">
+    <string>Цвет обводки</string>
+   </property>
+  </action>
+  <action name="action_music_on">
+   <property name="text">
+    <string>Включить музыку</string>
+   </property>
+   <property name="toolTip">
+    <string>Включить музыку</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_music_off">
+   <property name="text">
+    <string>Выключить музыку</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_clear">
+   <property name="text">
+    <string>Очистить все</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>true</kerning>
+    </font>
+   </property>
+  </action>
+  <action name="action_dosya_kaydet">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_dosya_farkli_kaydet">
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+   <property name="toolTip">
+    <string>Сохранить как</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_dosya_ac">
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="toolTip">
+    <string>Открыть</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_geri_al">
+   <property name="text">
+    <string>Шаг назад</string>
+   </property>
+   <property name="toolTip">
+    <string>Шаг назад</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
